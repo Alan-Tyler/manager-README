@@ -1,5 +1,5 @@
 # manager-README
-##An intro to me and my working style
+## An intro to me and my working style
 
 My managerial style, and what motivates me
 
