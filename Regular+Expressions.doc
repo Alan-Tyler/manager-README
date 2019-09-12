@@ -1,0 +1,396 @@
+Date: Thu, 12 Sep 2019 13:35:41 +0000 (UTC)
+Message-ID: <1744594315.109.1568295341490@2c1488c4d570>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_108_1212339405.1568295341490"
+
+------=_Part_108_1212339405.1568295341490
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Regular Expressions</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Regular Expressions</h1>
+    <div class=3D"Section1">
+        <p>Regular expressions are extremely useful in extracting informati=
+on from text such as code, log files, spreadsheets, or even documents. They=
+ can do text manipulation much, much faster than you'll be able to using ot=
+her strings tools such as compare, contains, replace, etc. A well-crafted r=
+egex can perform your find, compare and replace all in one action</p>
+<p>The first thing to recognize when using regular expressions is that ever=
+ything is essentially a character, and we are writing patterns to match a s=
+pecific sequence of characters (also known as a string). Most patterns use =
+normal ASCII, which includes letters, digits, punctuation and other symbols=
+ on your keyboard like %#$@!, but unicode characters can also be used to ma=
+tch any type of international text.</p>
+<p>And so characters include normal letters, but digits as well. In fact, n=
+umbers 0-9 are also just characters and if you look at an ASCII table, they=
+ are listed sequentially. In this case, the character \d can be used in pla=
+ce of any digit from 0 to 9. The preceding slash distinguishes it from the =
+simple d character and indicates that it is a metacharacter. \D does the op=
+posite - it matches and non-digit character</p>
+<p>RegEx has the concept of a wildcard, which is represented by the . (dot)=
+ metacharacter, and can match any single character (letter, digit, whitespa=
+ce, everything). You may notice that this actually overrides the matching o=
+f the period character, so in order to specifically match a period, you nee=
+d to escape the dot by using a slash \. accordingly.</p>
+<p>There is a method for matching specific characters using regular express=
+ions, by defining them inside square brackets. For example, the pattern [ab=
+c] will only match a single a, b, or c letter and nothing else.</p>
+<p>In some cases, we might know that there are specific characters that we =
+don't want to match too, for example, we might only want to match phone num=
+bers that are not from the area code 650.</p>
+<p>To represent this, we use a similar expression that excludes specific ch=
+aracters using the square brackets and the ^ (hat). For example, the patter=
+n [^abc] will match any single character except for the letters a, b, or c.=
+</p>
+<p>But what if we want to match a character that can be in a sequential ran=
+ge characters? Do we have no choice but to list them all out?</p>
+<p>Luckily, when using the square bracket notation, there is a shorthand fo=
+r matching a character in list of sequential characters by using the dash t=
+o indicate a character range. For example, the pattern [0-6] will only matc=
+h any single digit character from zero to six, and nothing else. And likewi=
+se, [^n-p] will only match any single character except for letters n to p.<=
+/p>
+<p>Multiple character ranges can also be used in the same set of brackets, =
+along with individual characters. An example of this is the alphanumeric \w=
+ metacharacter which is equivalent to the character range [A-Za-z0-9_] and =
+often used to match characters in English text. The corresponding \W charac=
+ter will match anything that is not in that range.</p>
+<p>We've so far learned how to specify the range of characters we want to m=
+atch, but how about the number of repetitions of characters that we want to=
+ match? One way that we can do this is to explicitly spell out exactly how =
+many characters we want, eg. \d\d\d which would match exactly three digits.=
+</p>
+<p>A more convenient way is to specify how many repetitions of each charact=
+er we want using the curly braces notation. For example, a{3} will match th=
+e a character exactly three times. Certain regular expression engines will =
+even allow you to specify a range for this repetition such that a{1,3} will=
+ match the a character no more than 3 times, but no less than once for exam=
+ple.</p>
+<p>This quantifier can be used with any character, or special metacharacter=
+s, for example w{3} (three w's), [wxy]{5} (five characters, each of which c=
+an be a w, x, or y) and .{2,6} (between two and six of any character).</p>
+<p>A powerful concept in regular expressions is the ability to match an arb=
+itrary number of characters. For example, imagine that you wrote a form tha=
+t has a donation field that takes a numerical value in dollars. A wealthy u=
+ser may drop by and want to donate $25,000, while a normal user may want to=
+ donate $25.</p>
+<p>One way to express such a pattern would be to use what is known as the K=
+leene Star and the Kleene Plus, which essentially represents either 0 or mo=
+re or 1 or more of the character that it follows (it always follows a chara=
+cter or group). For example, to match the donations above, we can use the p=
+attern \d* to match any number of digits, but a tighter regular expression =
+would be \d+ which ensures that the input string has at least one digit.</p=
+>
+<p>These quantifiers can be used with any character or special metacharacte=
+rs, for example a+ (one or more a's), [abc]+ (one or more of any a, b, or c=
+ character) and .* (zero or more of any character).</p>
+<p>Another quantifier that is really common when matching and extracting te=
+xt is the ? (question mark) metacharacter which denotes optionality. This m=
+etacharacter allows you to match either zero or one of the preceding charac=
+ter or group. For example, the pattern ab?c will match either the strings "=
+abc" or "ac" because the b is considered optional.</p>
+<p>Similar to the dot metacharacter, the question mark is a special charact=
+er and you will have to escape it using a slash \? to match a plain questio=
+n mark character in a string.</p>
+<p>When dealing with real-world input, such as log files and even user inpu=
+t, it's difficult not to encounter whitespace. We use it to format pieces o=
+f information to make it easier to read and scan visually, and a single spa=
+ce can put a wrench into the simplest regular expression.</p>
+<p>The most common forms of whitespace you will use with regular expression=
+s are the space (=E2=90=A3), the tab (\t), the new line (\n) and the carria=
+ge return (\r) (useful in Windows environments), and these special characte=
+rs match each of their respective whitespaces. In addition, a whitespace sp=
+ecial character \s will match any of the specific whitespaces above and is =
+extremely useful when dealing with raw input text.</p>
+<p>So far, we've been writing regular expressions that partially match piec=
+es across all the text. Sometimes this isn't desirable, imagine for example=
+ we wanted to match the word "success" in a log file. We certainly don't wa=
+nt that pattern to match a line that says "Error: unsuccessful operation"! =
+That is why it is often best practice to write as specific regular expressi=
+ons as possible to ensure that we don't get false positives when matching a=
+gainst real world text.</p>
+<p>One way to tighten our patterns is to define a pattern that describes bo=
+th the start and the end of the line using the special ^ (hat) and $ (dolla=
+r sign) metacharacters. In the example above, we can use the pattern ^succe=
+ss to match only a line that begins with the word "success", but not the li=
+ne "Error: unsuccessful operation". And if you combine both the hat and the=
+ dollar sign, you create a pattern that matches the whole line completely a=
+t the beginning and end.</p>
+<p>Note that this is different than the hat used inside a set of bracket [^=
+...] for excluding characters, which can be confusing when reading regular =
+expressions.</p>
+<p>Regular expressions allow us to not just match text but also to extract =
+information for further processing. This is done by defining groups of char=
+acters and capturing them using the special parentheses ( and ) metacharact=
+ers. Any subpattern inside a pair of parentheses will be captured as a grou=
+p. In practice, this can be used to extract information like phone numbers =
+or emails from all sorts of data.</p>
+<p>Imagine for example that you had a command line tool to list all the ima=
+ge files you have in the cloud. You could then use a pattern such as ^(IMG\=
+d+\.png)$ to capture and extract the full filename, but if you only wanted =
+to capture the filename without the extension, you could use the pattern ^(=
+IMG\d+)\.png$ which only captures the part before the period.</p>
+<p>When you are working with complex data, you can easily find yourself hav=
+ing to extract multiple layers of information, which can result in nested g=
+roups. Generally, the results of the captured groups are in the order in wh=
+ich they are defined (in order by open parenthesis).</p>
+<p>Take the example from the previous lesson, of capturing the filenames of=
+ all the image files you have in a list. If each of these image files had a=
+ sequential picture number in the filename, you could extract both the file=
+name and the picture number using the same pattern by writing an expression=
+ like ^(IMG(\d+))\.png$ (using a nested parenthesis to capture the digits).=
+</p>
+<p>The nested groups are read from left to right in the pattern, with the f=
+irst capture group being the contents of the first parentheses group, etc.<=
+/p>
+<p>As we mentioned before, it's always good to be precise, and that applies=
+ to coding, talking, and even regular expressions. For example, you wouldn'=
+t write a grocery list for someone to Buy more .* because you would have no=
+ idea what you could get back. Instead you would write Buy more milk or Buy=
+ more bread, and in regular expressions, we can actually define these condi=
+tionals explicitly.</p>
+<p>Specifically when using groups, you can use the | (logical OR, aka. the =
+pipe) to denote different possible sets of characters. In the above example=
+, I can write the pattern "Buy more (milk|bread|juice)" to match only the s=
+trings Buy more milk, Buy more bread, or Buy more juice.</p>
+<p>Like normal groups, you can use any sequence of characters or metacharac=
+ters in a condition, for example, ([cb]ats*|[dh]ogs?) would match either ca=
+ts or bats, or, dogs or hogs. Writing patterns with many conditions can be =
+hard to read, so you should consider making them separate patterns if they =
+get too complex.</p>
+<p><br></p>
+<p><a href=3D"https://regex101.com/" class=3D"external-link" rel=3D"nofollo=
+w">https://regex101.com/</a></p>
+<p><br><a href=3D"https://github.com/ziishaned/learn-regex#1-basic-matchers=
+" class=3D"external-link" rel=3D"nofollow">https://github.com/ziishaned/lea=
+rn-regex#1-basic-matchers</a></p>
+<p><br>Further reading:</p>
+<p><a href=3D"https://www.regular-expressions.info/tutorial.html" class=3D"=
+external-link" rel=3D"nofollow">https://www.regular-expressions.info/tutori=
+al.html</a></p>
+    </div>
+</body>
+</html>
+------=_Part_108_1212339405.1568295341490--

@@ -1,0 +1,515 @@
+Date: Thu, 12 Sep 2019 13:35:47 +0000 (UTC)
+Message-ID: <1082886359.163.1568295347618@b4d863ec203a>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_162_839497386.1568295347618"
+
+------=_Part_162_839497386.1568295347618
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>REST and APIs</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>REST and APIs</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"RESTandAPIs-REST">REST</h2>
+<p>The motivation behind the development of REST was to create a design pat=
+tern for how the Web should work, so that it could act as a guiding framewo=
+rk for the Web standards and when designing Web services.</p>
+<p>REST-style architectures consist of clients and servers. Clients initiat=
+e requests to servers who process these requests and return responses based=
+ on these requests. These requests and responses are built around the trans=
+fer of representations of these resources. A resource can be any coherent a=
+nd meaningful concept that can be addressed, while a representation of a re=
+source is a document that captures the intended state of a resource. Fundam=
+entally in REST each resource is first identified using a URL and a new res=
+ource for every service required is created. The data returned by the servi=
+ce must be linked to the other data, hence making it in to a network of inf=
+ormation unlike the Object Oriented design which encourages the encapsulati=
+on of information.</p>
+<p>REST architectural style describes six constraints applied to architectu=
+re:</p>
+<p>1. Uniform Interface<br>Individual resources are identified using URLS. =
+The resources (database) are themselves different from the representation (=
+XML, JSON, HTML) sent to the client. The client can manipulate the resource=
+ through the representations provided they have the permissions. Each messa=
+ge sent between the client and the server is self-descriptive and includes =
+enough information to describe how it is to be processed. The hypermedia th=
+at is hyperlinks and hypertext act as the engine for state transfer.</p>
+<p>2. Stateless Interactions<br>None of the clients context is to be stored=
+ on the server side between the request. All of the information necessary t=
+o service the request is contained in the URL, query parameters, body or he=
+aders.</p>
+<p>3. Cacheable<br>Clients can cache the responses. The responses must defi=
+ne themselves as cacheable or not to prevent the client from sending the in=
+appropriate data in response to further requests.</p>
+<p>4. Client-Server<br>The clients and the server are separated from each o=
+ther thus the client is not concerned with the data storage thus the portab=
+ility of the server. Client code is improved while on the server side the s=
+erver is not concerned with the client interference thus the server is simp=
+ler and easy to scale.</p>
+<p>5. Layered System<br>At any time client cannot tell if it is connected t=
+o the end server or to an intermediate. The intermediate layer helps to enf=
+orce the security policies and improve the system scalability by enabling l=
+oad-balancing</p>
+<p>6. Code on Demand<br>An optional constraint where the server temporarily=
+ extends the functionality of a client by the transfer of executable code. =
+E.g. JavaScript</p>
+<p><br></p>
+<h2 id=3D"RESTandAPIs-WhatmakesagoodRESTAPI?">What makes a good REST API?</=
+h2>
+<p>Building a fully functional API consists of multiple pieces that are eve=
+ntually connected together, such as authentication, integration with extern=
+al services and the core application logic. Here we will see what it takes =
+to build a full API, and what you should consider when the time comes to bu=
+ild one.</p>
+<p><br>REST resources:</p>
+<p>Resource names</p>
+<p>One of the first questions that comes to your mind when designing an API=
+ is probably this: What should a URI look like? A URI is the address to a r=
+esource, such as a user account. A URI might look like this: =E2=80=9C/user=
+s/1/products/2=E2=80=9D. Should these resources be singular or plural?</p>
+<p>This has been a controversial topic for a long time. Both forms are seen=
+ commonly, but it is generally more acceptable to use plural names for all =
+resources.</p>
+<p><br>HTTP methods</p>
+<p>It might seem tempting to delete a user using the following GET request:=
+ =E2=80=9C/users/1/delete=E2=80=9D. However, you should always use HTTP met=
+hods meant for that type of request; This way you don=E2=80=99t have to set=
+ up too many redundant URIs. You can simply call the same resource name wit=
+h a different method, and the action will be different for each type of met=
+hod.</p>
+<p>GET requests should be used for ready-only queries, in other words, for =
+getting data. POST requests should be used to create a new resource. PUT is=
+ the right method to use for updating an existing resource. If you only wan=
+t to update a small portion of a resource, such as an email address, use PA=
+TCH instead. To delete a resource, use DELETE.</p>
+<p>There are more HTTP methods available, but there are the most common one=
+s you will likely implement in your API.</p>
+<p><br></p>
+<p>API keys</p>
+<p>An API key should never be stored in the URI: URIs are public and can be=
+ shared. API keys are like passwords and thus should never be shared. It is=
+ good practice to send an API using HTTP headers, more specifically the aut=
+horisation header. Keep in mind that all APIs implementing this type of aut=
+horisation should use HTTPS to prevent the API key from being sent in plain=
+text.</p>
+<p><br>Versioning an API</p>
+<p>Versioning is something you should pay special attention to from the ver=
+y beginning of development. If you believe your API will have multiple vers=
+ions running at the same time, your API should be versioned. There are mult=
+iple ways to do this for APIs. Two popular ways are to send the Accept head=
+er from the front end to the API or to send the version in the URI of the A=
+PI call, such as =E2=80=9CGET /v1/users/1=E2=80=9D.</p>
+<p>The second approach is slightly controversial because it is not a fully =
+RESTful approach. However, it is a very simple way and used by many popular=
+ APIs.</p>
+<p>When you version your API, you can divide the core application logic int=
+o different namespaces and load code from a namespace based on what version=
+ the client requests.</p>
+<h2 id=3D"RESTandAPIs-OtherAPIelements:"><br>Other API elements:</h2>
+<p>Authentication</p>
+<p>If you application has user accounts, you will need to handle authentica=
+tion with your API. The first thing you should do is decide how users authe=
+nticate. Is it a traditional username and password combination, an API key,=
+ or perhaps something more advanced like OAuth 2? Either way, if your appli=
+cation handles login details, you should also set up an SSL certificate for=
+ your API.</p>
+<p><br>Permission Management</p>
+<p>Whenever a user tries to do something, for example to modify the profile=
+ of another user, a piece of code is executed first to check whether the us=
+er has the correct role to perform that action. If yes, the execution conti=
+nues normally, and if not, a permission denied error is returned.</p>
+<p><br>CORS</p>
+<p>If your front and back ends are located in a different address determine=
+d by the same-origin policy, you have to set up cross-origin resource shari=
+ng (CORS) on the API server. If you are on a shared web hosting plan, you c=
+an do this using the PHP header() function. If you have access to the confi=
+guration file of your HTTP server, you can also set it there.</p>
+<p><br>HTTP methods</p>
+<p>GET and POST requests are the most common HTTP methods, but these are no=
+t the only ones you can use in your applications. You may have heard about =
+PUT, PATCH and HEAD, and if you are working on an RESTful API, you should b=
+e using them. Let=E2=80=99s see what these less common HTTP methods are and=
+ when you should use them.</p>
+<p><br>PUT Request</p>
+<p>When speaking from a RESTful viewpoint, a POST request is used to create=
+ a new resource, PUT updates it.</p>
+<p>PUT replaces the entire resource, so you you are essentially recreating =
+it when using a PUT request. This means you have to send a full representat=
+ion of the resources, or in other words, all fields of the resource, when u=
+sing PUT. If the target resource does not exist, it will be created. As an =
+example, PUT <a href=3D"http://example.com/customers/1/orders/1" class=3D"e=
+xternal-link" rel=3D"nofollow">http://example.com/customers/1/orders/1</a> =
+would update all fields of the order and return the status code 200 (OK) if=
+ the update was successful.</p>
+<p><br>PATCH Request</p>
+<p>Similar to PUT, but instead of updating the whole resource at once, you =
+can only update some specific fields with a PATCH request. You can specify =
+these fields by using the name attribute in the form you are using to make =
+the PATCH request.</p>
+<p>PATCH is identical to PUT with the exception that only the fields you se=
+nd will be updated. All other fields will keep their old values. An example=
+ of this could be: PATCH <a href=3D"http://example.com/users/1/products/1" =
+class=3D"external-link" rel=3D"nofollow">http://example.com/users/1/product=
+s/1</a>. In this case, you should have the fields you want to modify in you=
+r form.</p>
+<p>DELETE Request</p>
+<p>DELETE is the easiest method: it simply deletes the entire resource. For=
+ example to delete a user with the ID of 1, you can send a DELETE request t=
+o <a href=3D"http://example.com/users/1" class=3D"external-link" rel=3D"nof=
+ollow">http://example.com/users/1</a>. A successful request returns the sta=
+tus code 200. Notice that DELETE always removes the whole resource, not a s=
+ingle field.</p>
+<p>HEAD Request</p>
+<p>Like PATCH is related to PUT, HEAD is related to GET. The difference bet=
+ween HEAD and GET is that HEAD only returns the headers of the response. Th=
+e body, which contains the actual content, is not sent.</p>
+<p>OPTIONS Request</p>
+<p>This is a method you don=E2=80=99t see very often, but is an important o=
+ne for sure. OPTIONS can be used to query a specific URI to check what meth=
+ods it supports. If you are unsure what methods have been implemented for s=
+ome URI, send an OPTIONS request first and then a supported type of request=
+ that best suits your needs.</p>
+<p><br></p>
+<p>It's sometimes confusing when to use PUT and when to use POST</p>
+<p>Let=E2=80=99s compare them for better understanding.</p>
+<p>PUT:</p>
+<p>RFC-2616 clearly mention that PUT method requests for the enclosed entit=
+y be stored under the supplied Request-URI. If the Request-URI refers to an=
+ already existing resource =E2=80=93 an update operation will happen, other=
+wise create operation should happen if Request-URI is a valid resource URI =
+(assuming client is allowed to determine resource identifier).</p>
+<p>PUT /questions/{question-id}</p>
+<p><br>POST:</p>
+<p>The POST method is used to request that the origin server accept the ent=
+ity enclosed in the request as a new subordinate of the resource identified=
+ by the Request-URI in the Request-Line. It essentially means that POST req=
+uest-URI should be of a collection URI.</p>
+<p>POST /questions</p>
+<p><br>PUT:</p>
+<p>PUT method is idempotent. So if you send retry a request multiple times,=
+ that should be equivalent to single request modification.</p>
+<p><br>POST:</p>
+<p>POST is NOT idempotent. So if you retry the request N times, you will en=
+d up having N resources with N different URIs created on server.</p>
+<p>PUT:</p>
+<p>Use PUT when you want to modify a singular resource which is already a p=
+art of resources collection. PUT replaces the resource in its entirety. Use=
+ PATCH if request updates part of the resource.</p>
+<p><br>POST:</p>
+<p>Use POST when you want to add a child resource under resources collectio=
+n.</p>
+<p><br>PUT:</p>
+<p>PUT is idempotent, so you can cache the response.</p>
+<p><br>POST:</p>
+<p>Responses to this method are not cacheable, unless the response includes=
+ appropriate Cache-Control or Expires header fields. However, the 303 (See =
+Other) response can be used to direct the user agent to retrieve a cacheabl=
+e resource.</p>
+<p><br>PUT:</p>
+<p>Generally, in practice, always use PUT for UPDATE operations.</p>
+<p><br>POST:</p>
+<p>Always use POST for CREATE operations.</p>
+<p><br></p>
+<h2 id=3D"RESTandAPIs-WhatistheRichardsonMaturityModel?">What is the Richar=
+dson Maturity Model?</h2>
+<p>The Richardson Maturity Model is a way to grade your API according to th=
+e constraints of REST. The better your API adheres to these constraints, th=
+e higher its score is. The Richardson Maturity Model knows 4 levels (0-3), =
+where level 3 designates a truly RESTful API.</p>
+<p><br>Level 0: Swamp of POX</p>
+<p>Level 0 uses its implementing protocol (normally HTTP, but it doesn't ha=
+ve to be) like a transport protocol. That is, it tunnels requests and respo=
+nses through its protocol without using the protocol to indicate applicatio=
+n state. It will use only one entry point (URI) and one kind of method (in =
+HTTP, this normally is the POST method). Examples of these are SOAP and XML=
+-RPC.</p>
+<p>Level 1: Resources</p>
+<p>When your API can distinguish between different resources, it might be l=
+evel 1. This level uses multiple URIs, where every URI is the entry point t=
+o a specific resource. Instead of going through <a href=3D"http://example.o=
+rg/articles" class=3D"external-link" rel=3D"nofollow">http://example.org/ar=
+ticles</a>, you actually distinguish between <a href=3D"http://example.org/=
+article/1" class=3D"external-link" rel=3D"nofollow">http://example.org/arti=
+cle/1</a> and <a href=3D"http://example.org/article/2" class=3D"external-li=
+nk" rel=3D"nofollow">http://example.org/article/2</a>. Still, this level us=
+es only one single method like POST.</p>
+<p>Level 2: HTTP verbs</p>
+<p>To be honest, I don't like this level. This is because this level sugges=
+ts that in order to be truly RESTful, your API MUST use HTTP verbs. It does=
+n't. REST is completely protocol agnostic, so if you want to use a differen=
+t protocol, your API can still be RESTful. That said, almost all REST APIs =
+use HTTP.</p>
+<p>This level indicates that your API should use the protocol properties in=
+ order to deal with scalability and failures. Don't use a single POST metho=
+d for all, but make use of GET when you are requesting resources, and use t=
+he DELETE method when you want to delete a resources. Also, use the respons=
+e codes of your application protocol. Don't use 200 (OK) code when somethin=
+g went wrong for instance. By doing this for the HTTP application protocol,=
+ or any other application protocol you like to use, you have reached level =
+2.<br>Level 3: Hypermedia controls</p>
+<p>Level 3, the highest level, uses HATEOAS to deal with discovering the po=
+ssibilities of your API towards the clients.</p>
+<p><br></p>
+<h2 id=3D"RESTandAPIs-HATEOAS"><br>HATEOAS</h2>
+<p>Example:</p>
+<p>GET /account/12345 HTTP/1.1</p>
+<p>HTTP/1.1 200 OK<br>&lt;?xml version=3D"1.0"?&gt;<br>&lt;account&gt;<br>&=
+lt;account_number&gt;12345&lt;/account_number&gt;<br>&lt;balance currency=
+=3D"gbp"&gt;100.00&lt;/balance&gt;<br>&lt;link rel=3D"deposit" href=3D"/acc=
+ount/12345/deposit" /&gt;<br>&lt;link rel=3D"withdraw" href=3D"/account/123=
+45/withdraw" /&gt;<br>&lt;link rel=3D"transfer" href=3D"/account/12345/tran=
+sfer" /&gt;<br>&lt;link rel=3D"close" href=3D"/account/12345/close" /&gt;<b=
+r>&lt;/account&gt;</p>
+<p><br>Apart from the fact that we have =C2=A3100 in our account, we can se=
+e 4 options: deposit more money, withdraw money, transfer money to another =
+account, or close our account. The "link"-tags allows us to find out the UR=
+Ls that are needed for the specified actions. Now, let's suppose we didn't =
+have =C2=A3100 in the bank, but we actually are in the red:</p>
+<p>GET /account/12345 HTTP/1.1</p>
+<p>HTTP/1.1 200 OK<br>&lt;?xml version=3D"1.0"?&gt;<br>&lt;account&gt;<br>&=
+lt;account_number&gt;12345&lt;/account_number&gt;<br>&lt;balance currency=
+=3D"gbp"&gt;-25.00&lt;/balance&gt;<br>&lt;link rel=3D"deposit" href=3D"/acc=
+ount/12345/deposit" /&gt;<br>&lt;/account&gt;</p>
+<p>Now we are =C2=A325 in the red. Do you see that right now we have lost m=
+any of our options, and only depositing money is valid? As long as we are i=
+n the red, we cannot close our account, nor transfer or withdraw any money =
+from the account. The hypertext is actually telling us what is allowed and =
+what not: HATEOAS</p>
+<p><br></p>
+<h2 id=3D"RESTandAPIs-There'snosuchthingasaRESTAPI"><br>There's no such thi=
+ng as a REST API</h2>
+<p>Not everyone agrees with the Richardson Maturity Model - A position ofte=
+n expounded by overzealous REST purists, who miss the point that just becau=
+se REST doesn't dictate HTTP, doesn't mean that therefore any HTTP API cann=
+ot be RESTful... But to be clear - you can have a REST API that doesn't fol=
+low the Maturity Model. But a well-crafted API *will* follow it. What you c=
+hoose to name it comes down to semantics</p>
+<p>Also - using cookies doesn't break HATEOAS - to believe so indicates tha=
+t you don't understand how cookies work.</p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_162_839497386.1568295347618--
