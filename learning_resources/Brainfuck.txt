@@ -1,0 +1,336 @@
+Brainfuck
+
+This is a Turing complete language, which means that you can (if you were feeling masochistic enough) use it to solve any mathematical problem computationally (if you know how to program it)
+
+* 
+In general for a programming language to be Turing-complete it needs:
+1. A form of conditional repetition or conditional jump (while, for, if and goto)
+2. A way to read and write to some storage mechanism (variables)
+
+The language only consists of 8 operators
+
+<
+>
++
+-
+[
+]
+,
+.
+
+It is designed to be deliberatelky difficult and inefficient... The idea behind brainfuck is memory manipulation. Basically you are given an array of 30,000 1byte memory blocks. The array size is actually dependent upon the implementation used in the compiler or interpretor, but standard brainfuck states 30,000. Within this array, you can increase the memory pointer, increase the value at the memory pointer, etc. Let me first present to you the 8 operators available to us.
+
+> = increases memory pointer, or moves the pointer to the right 1 block.
+< = decreases memory pointer, or moves the pointer to the left 1 block.
++ = increases value stored at the block pointed to by the memory pointer
+- = decreases value stored at the block pointed to by the memory pointer
+[ = like c while(cur_block_value != 0) loop.
+] = if block currently pointed to's value is not zero, jump back to [
+, = like c getchar(). input 1 character.
+. = like c putchar(). print 1 character to the console
+
+
+
+Any arbitrary character besides the 8 listed above should be ignored by the compiler or interpretor. Characters besides the 8 operators should be considered comments.
+
+All memory blocks on the "array" are set to zero at the beginning of the program, and the memory pointer starts out on the very left most memory block.
+
+Loops may be nested as many times as you want, but all [ must have a corresponding ].
+
+For example:
+
+>>>>++
+
+This will move the memory pointer to the fourth memory block, and increment the value stored there by 2. So it looks like
+
+memory blocks
+-------------
+[0][0][0][2][0][0]...
+^ memory pointer
+
+
+
+If we take that same program, and add more onto the end of it like:
+
+>>>>++<<+>>+
+
+
+At the end of our program, our memory layout will look like this:
+
+memory blocks
+-------------
+[0][1][0][3][0][0]...
+^ memory pointer
+
+
+
+The pointer was moved to the fourth block, incremented the value by 2, moved back 2 blocks to the second block, incremented the valued stored there by 1, and then the pointer moved 2 blocks to the right again to the fourth block and incremented the value stored there by one. And at the end of the program the memory pointer lies back on the fourth memory block. That is fine and dandy, but we can't really see anything. So lets write a program that will produce actual output.
+
+
+++++++ [ > ++++++++++ < - ] > +++++.
+
+This program prints out the letter 'A'. First, it increments cell #1 to 6.
+Cell #1 will be used for looping. Then, it enters the loop ([) and moves
+to cell #2. It increments cell #2 10 times, moves back to cell #1, and
+decrements cell #1. This loop happens 6 times (it takes 6 decrements for
+cell #1 to reach 0, at which point it skips to the corresponding ] and
+continues on).
+
+At this point, we're on cell #1, which has a value of 0, while cell #2 has a
+value of 60. We move on cell #2, increment 5 times, for a value of 65, and then
+print cell #2's value. 65 is 'A' in ASCII, so 'A' is printed to the terminal.
+
+
+Now the obligatory 'hello world':
+
+>+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.+++++++..+++.[-]
+>++++++++[<++++>-] <.>+++++++++++[<++++++++>-]<-.--------.+++
+.------.--------.[-]>++++++++[<++++>- ]<+.[-]++++++++++.
+
+
+We must remember that we are working with numbers, so we must use a character's ASCII decimal number to represent it. then when we print it, will print the value as an ASCII character. Lets break this program down.
+
+>+++++++++[<++++++++>-]<.
+
+
+Lets break this part down farther using our diagrams.
+
+>
+
+First you can see, that we increment the memory pointer to the next memory block leaving the first memory block at zero.
+
+memory blocks
+-------------
+[0][0][0][0][0][0]...
+^ memory pointer
+
+We then increase the value at our current memory block to 9.
+
++++++++++
+
+Leaving our diagram like this:
+
+memory blocks
+-------------
+[0][9][0][0][0][0]...
+^ memory pointer
+
+Since the block we are on contains a non-zero value, we then enter the loop.
+
+[
+
+Now that we are in the loop Then we move the memory pointer one block to the left
+
+<
+
+Which gives us:
+
+memory blocks
+-------------
+[0][9][0][0][0][0]...
+^ memory pointer
+
+
+And we increment the memory blocks stored value by 8.
+
+++++++++
+
+So our diagram looks like:
+
+memory blocks
+-------------
+[8][9][0][0][0][0]...
+^ memory pointer
+
+
+Then we move the memory pointer one block to the right, to the second memory block again, and decrease the value stored there from 9 to 8.
+
+>-
+
+
+Diagram:
+
+memory blocks
+-------------
+[8][8][0][0][0][0]...
+^ memory pointer
+
+
+We then hit the end of our loop.
+
+]
+
+It checks to see if the memory block the pointer currently points to contains the value zero, but current memory block's stored value is not zero, so the loop starts over. Moving the pointer to the left. Increasing it by 8, and moving the pointer to the right. and decreasing it by 1. After the 2nd pass of all that, our diagram now looks like:
+
+
+memory blocks
+-------------
+[16][7][0][0][0][0]...
+^ memory pointer
+
+
+It will continue this process over and over until the value stored at the second memory block is zero. It then exits the loop. Once we have exited the loop. The program moves the pointer back to the first memory block one final time, and prints the value stored there. If you followed that, you would see that we increased the first memory blocks stored value by 8, 9 times. We know that 8*9=72 and 72 is the ASCII decimal value for 'H'.
+
+
+<.
+
+
+And the diagram:
+
+
+memory blocks
+-------------
+[72][0][0][0][0][0]...
+^ memory pointer
+
+
+call the print function. and 'H' is printed to the console.
+
+
+We can work out the rest... See
+
+http://fatiherikli.github.io/brainfuck-visualizer/#KysrKysgKysrKysgICAgICAgICAgICAgaW5pdGlhbGl6ZSBjb3VudGVyIChjZWxsICMwKSB0byAxMApbICAgICAgICAgICAgICAgICAgICAgICB1c2UgbG9vcCB0byBzZXQgNzAvMTAwLzMwLzEwCiAgICA+ICsrKysrICsrICAgICAgICAgICAgICBhZGQgIDcgdG8gY2VsbCAjMQogICAgPiArKysrKyArKysrKyAgICAgICAgICAgYWRkIDEwIHRvIGNlbGwgIzIKICAgID4gKysrICAgICAgICAgICAgICAgICAgIGFkZCAgMyB0byBjZWxsICMzCiAgICA+ICsgICAgICAgICAgICAgICAgICAgICBhZGQgIDEgdG8gY2VsbCAjNAo8PDw8IC0gICAgICAgICAgICAgICAgICBkZWNyZW1lbnQgY291bnRlciAoY2VsbCAjMCkKXQo+ICsrIC4gICAgICAgICAgICAgICAgICBwcmludCAnSCcKPiArIC4gICAgICAgICAgICAgICAgICAgcHJpbnQgJ2UnCisrKysrICsrIC4gICAgICAgICAgICAgIHByaW50ICdsJwouICAgICAgICAgICAgICAgICAgICAgICBwcmludCAnbCcKKysrIC4gICAgICAgICAgICAgICAgICAgcHJpbnQgJ28nCj4gKysgLiAgICAgICAgICAgICAgICAgIHByaW50ICcgJwo8PCArKysrKyArKysrKyArKysrKyAuICBwcmludCAnVycKPiAuICAgICAgICAgICAgICAgICAgICAgcHJpbnQgJ28nCisrKyAuICAgICAgICAgICAgICAgICAgIHByaW50ICdyJwotLS0tLSAtIC4gICAgICAgICAgICAgICBwcmludCAnbCcKLS0tLS0gLS0tIC4gICAgICAgICAgICAgcHJpbnQgJ2QnCj4gKyAuICAgICAgICAgICAgICAgICAgIHByaW50ICchJwo+IC4gICAgICAgICAgICAgICAgICAgICBwcmludCAnXG4n
+
+
+
+
+user input:
+
+
+Input in brainfuck is controlled by the ',' operator. It will get a character and store its ASCII decimal value to the current memory block that the memory pointer points to. Lets experiment with it a bit.
+
+, [ > + < - ] > .
+
+This program reads a character from the user input and copies the character into
+cell #1. Then we start a loop. Move to cell #2, increment the value at cell #2,
+move back to cell #1, and decrease the value at cell #1. This continues on
+until cell #1 is 0, and cell #2 holds cell #1's old value. Because we're on
+cell #1 at the end of the loop, move to cell #2, and then print out the value
+in ASCII.
+
+
+Remember, when you use the input operator, you are actually storing the decimal ASCII value of the character you press on the keyboard. So pressing 2 for input isn't actually storing 2. Its storing the decimal value of the ASCII char '2', which is decimal 50.
+
+,.,.,.
+
+
+This will take in 3 characters and print them out.
+
+>,[>,]<[<]>[.>]
+
+This is a program that will act like the UNIX cat command. It will read in from STDIN and output to STDOUT. Lets break it down.
+
+>,
+
+Move the memory pointer the the second memory block leaving the first block with a value of zero. Input a value and store it at the current memory pointer location which is the second memory block.
+
+[>,]
+
+Begin a loop that will move the pointer up a memory block, and Input a value and store it there. This will repeat until it encounters a NULL character (\0 or decimal value of zero);
+
+<[<]
+
+Rewind. Once we've made it to this point in the program, it means that we have encountered a NULL character. So in order to start our loop, we need to move the memory pointer one memory block backwards so that we have a non-zero value stored there. Once there, the loops starts, and moves the memory pointer one block to the left until we reach the first memory block, which we left with a value of zero at the beginning of the program. Once it reaches the first memory block with the value of zero, the loop exits.
+
+
+
+
+Conditional statements
+
+Say we want to input into memory block 1. Then we would like to test if the input value (x) was equal to 5, and if so, set y to 3. There are two ways to do this, one is the destructive flow control, where it diminishes the value you are test. The other obviously non-destructive flow control. where you variable stays intact.
+
+Here is non destructive:
+
+In BrainFuck:
+
+,[>>+>+<<<-]>>>[<<<+>>>-]>+<<[-----[>]>>[<<<+++>>>[-]]
+
+Once again, lets break that down to hopefully explain that better. Run though this twice. Once as we go along assuming the value 6 was entered, and once assuming the value 5 was entered. Also, remember, Brainfuck will only enter as loop if the value in the block that the pointer is currently on is non-zero. If the value at the block is zero, then it will skip over that loop and ignore it. And the same goes while in a loop. If when it reaches the other end of that loop ( ] ), if the value stored at the block where the pointer is currently at is zero, it will exit the loop and continue on with the program.
+
+input into x.
+
+,
+1 2 3 4 5 6
+[x][y][0][0][0][0]...
+^ memory pointer
+
+
+copy from block 1, to block 3, using block 4 as a temp storage. We end on block number 4.
+
+[>>+>+<<<-]>>>[<<<+>>>-]
+
+
+1 2 3 4 5 6
+[x][y][x][0][0][0]
+^ memory pointer
+
+
+set block 5 to 1. This will be our block to test for true of false. Then move the pointer back to 3.
+
+>+<<
+
+1 2 3 4 5 6
+[x][y][x][0][1][0]
+^ memory pointer
+
+
+Now subtract 5 and if x was 5 set y to 3 and then move the pointer back over to block 5 and set back to zero so that the loop will only run once. If x was not equal to 5, then the pointer will end up resting on memory block 6.
+
+[-----[>]>>[<<<+++>>>[-]]
+
+if x was 5:
+
+1 2 3 4 5 6 [x][3][0][0][0][0]... ^ memory pointer
+
+if x was not 5
+
+1 2 3 4 5 6 [x][y][x][0][1][0]... ^ memory pointer
+
+That was the non destructive way to do an if statement. The destructive way would be to just subtract from the input variable directly instead of copying it. this will lead to much shorter code. Lets test x for the value 5 again and set y to 3 if it is.
+
+Destructive way:
+
++[<<,-----[>]>>[<<+++>>[-]]]
+
+
+
+
+
+Here are some challenges to give you something to program in brainfuck:
+
+Write a program to print your name.
+Write a program to print all printable ASCII characters.
+(From BrainFuck Golf) Write a program that will take a NULL ('\0') termina- ted string as input, and output source code for a BrainFuck program that when compiled and ran, will print the string input into the first program.
+
+
+
+Some tips:
+
+Learn to think in Brainfuck. It's very different than anything else. Read and write, and rewrite, and rewrite lots of brainfuck programs. The language doesn't give you much to work with, so it's important to use what it does give you flexibly and efficiently. Don't let any abstractions get between you and the language--get in there and grapple with it.
+
+Get very comfortable with nondestructive flow control. To get out of a decision loop, rather than zeroing the starting cell by copying it elsewhere and then copying it back after leaving the loop, it's often better to move the pointer to a pre-existing zero nearby. Yes, this means the pointer will be in different places depending on whether you went through the loop, but that also means those places probably have different arrangements of nearby zeros and nonzeros, which you can use to resynch the pointer location using another loop. This technique is fundamental to good Brainfuck programming, and various forms of it will constantly prove useful.
+
+That and the fact that every > or < costs mean that the details of memory layout are important. Try out as many variations of your layout as you have patience for. And remember, your memory layout does not have to be a rigid mapping of data to locations. It can morph over the course of execution.
+
+On a larger scale, consider and even try implementing a variety of different algorithms. Initially it will not be obvious exactly what algorithm will be best; it may not even be obvious what basic approach will be best, and it will probably be something different than what would be best in a normal language.
+
+If you're dealing with large or variable-sized data, see if there's any way you can possibly deal with it locally, without having to keep track of how big it is or your numerical location within it.
+
+The same data can be two different things. (Most often, a number or character and also a nonzero positional marker. But see random.b, where a bit counter doubles as the value of one cell of a cellular automaton.)
+
+The same code can do two different things, and it's a lot easier to make it do so in a language where code is as generic as <+<. Be alert to such possibilities. In fact, you may occasionally notice, even in what seems to be a well-written program, that there are small portions that could be deleted entirely, nothing added, and the thing would, by happenstance, still run flawlessly.
+
+In most languages, you use a compiler or interpreter frequently to check your program's behavior. The Brainfuck language demands greater conceptual control; if you need a compiler to tell you what your program does, you don't have a firm enough grasp of your program, and you probably need to stare at it some more--at least if you want to have a clear enough image of the conceptual halo of similar programs to be good at golf. With practice, you'll be producing a dozen versions of your program before you try running one, and by that point you'll be 95% sure that your shortest one will run correctly.
+
+
+
+Further reference:
+
+https://www.nieko.net/projects/brainfuck
+
+An archive of pre-written Brainfuck programs:
+
+http://esoteric.sange.fi/brainfuck/
+
+
+
