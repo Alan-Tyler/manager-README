@@ -1,28 +1,47 @@
 We like code reviews. While some (misguided) people may see them as introducing an extra delivery speed-bump, they do bring a number of benefits:
 
 -To spot and fix defects early in the process and improve code quality.
+
 -Better shared understanding of the code base as team members learn from each other
+
 -Helps to maintain a level of consistency in design and implementation.
+
 -Helps to identify common defects across the team, thus reducing rework.
+
 -Builds confidence of stakeholders about technical quality of the execution.
+
 -Uniformity in understanding helps interchangeability of team members in case of non-availability of any one of them.
+
 -A different perspective. “Another set of eyes” adds objectivity. Similar to the reason for separating your coding and testing teams, peer reviews provide the distance needed to recognise problems.
+
 -Pride/reward. Recognition of coding prowess is a significant reward for many programmers.
+
 -Team cohesiveness. Working together helps draw team members closer. It also provides a brief respite from the isolation that coding often brings.
+
 -Education of junior programmers
+
 -Better code security
+
 -So if we take it as a given that code reviews are A Good Thing then there are a few things to bear in mind:
 
 
 
 When do I do a code review?
+
 How to do a code review
+
 All code should be clean and self-documenting
+
 What is self-documenting code?
+
 Who should do code reviews
+
 Some things to remember
+
 Don't take offence!
+
 Code reviews and pair programming
+
 Some tips
 
 
@@ -37,21 +56,36 @@ Code that has not been reviewed won't be promoted to Prod
 Recommended process:
 
 -Developer walks reviewer through the code
+
 -Reviewer asks questions as they are going through it
+
 -Developer jots down notes / suggestions / defects
+
 -Developer amends code if necessary
+
 -Revised code is re-reviewed
+
 -If code is passed then it gets promoted (merged)
 
 
 The main areas a reviewer is focusing on are as follows:
+
 General unit testing - Are there unit tests? Does the code run all the tests?
-Comment and coding conventions - Regardless of whether the code you're reviewing is Java, Go, PL/SQL BASIC, FORTRAN, there are conventions. For a set of conventions we work to at RI see here. There are various standards such as the SOLID principles.
+
+Comment and coding conventions 
+
+- Regardless of whether the code you're reviewing is Java, Go, PL/SQL BASIC, FORTRAN, there are conventions. For a set of conventions we work to at RI see here. There are various standards such as the SOLID principles.
+
 Error handling - Correct use of try / catch and similar code structures
+
 Resource leaks - Have you freed up memory you'd previously allocated, or cleared your Eden space? What impact does your code have on the Major GC?
+
 Thread safety - Is there locking, synchronisation or atomic wrappers? Are local objects local?
+
 Performance - does it take hours to run / is resource inefficient?
+
 Functionality - does it do what it should? 
+
 Security - have you checked for insecure authentication, sql injection, etc?
 
 
@@ -62,18 +96,30 @@ All code should be clean and self-documenting
 Code is very rarely written once and then forgotten about. Most of the time you, or more likely someone else, will at some point need to work on it again. And for that it's important that your code is clean and easily understandable. Clean code is code that is easy to understand and easy to change, i.e.
 
 -It is easy to understand the execution flow of the entire application
+
 -It is easy to understand how the different objects collaborate with each other
+
 -It is easy to understand the role and responsibility of each class
+
 -It is easy to understand what each method does
+
 -It is easy to understand what is the purpose of each expression and variable
+
 'Easy to change' means the code is easy to extend and refactor, and it’s easy to fix bugs in the codebase. This can be achieved if the person making the changes understands the code and also feels confident that the changes introduced in the code do not break any existing functionality. For the code to be easy to change:
 
+
 -Classes and methods are small and only have single responsibility
+
 -Classes have clear and concise public APIs
+
 -Classes and methods are predictable and work as expected
+
 -The code is easily testable and has unit tests (or it is easy to write the tests)
+
 -Tests are easy to understand and easy to change
+
 -If you write clean code, then you are helping your future self and your co-workers. You are reducing the cost of maintenance of the application you are writing. You are making it easier to estimate the time needed for new features. You are making it easier to fix bugs. You are making it more enjoyable to work on the code for many years to come. Essentially you are making the life easier for everyone involved in the project.
+
 
 Some recommended reading material:
 
