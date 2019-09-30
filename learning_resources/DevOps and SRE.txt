@@ -1,0 +1,106 @@
+    Reduce organizational silos
+    Accept failure as normal
+    Implement gradual changes
+    Leverage tooling and automation
+    Measure everything
+
+
+   Reduce organizational silos
+        SRE shares ownership with developers to create shared responsibility
+        SREs use the same tools that developers use, and vice versa
+    Accept failure as normal
+        SREs embrace risk
+        SRE quantifies failure and availability in a prescriptive manner using Service Level Indicators (SLIs) and Service Level Objectives (SLOs)
+        SRE mandates blameless post mortems
+    Implement gradual changes
+        SRE encourages developers and product owners to move quickly by reducing the cost of failure[4]
+    Leverage tooling and automation
+        SREs have a charter to automate menial tasks (called "toil") away[7]
+    Measure everything
+        SRE defines prescriptive ways to measure values[8]
+        SRE fundamentally believes that systems operation is a software problem
+
+
+No more silos! Reduce manual work!
+
+The fundamental goal is greater reliability with less manual intervention as a system scales.
+
+Chain of responsibility
+
+The indirect costs of the development/ops split can be subtle, but are often more expensive to the organization than the direct costs. These costs arise from the fact that the two teams are quite different in background, skill set, and incentives. They use different vocabulary to describe situations; they carry different assumptions about both risk and possibilities for technical solutions; they have different assumptions about the target level of product stability. The split between the groups can easily become one of not just incentives, but also communication, goals, and eventually, trust and respect.
+
+Traditional operations teams and their counterparts in product development thus often end up in conflict, most visibly over how quickly software can be released to production. At their core, the development teams want to launch new features and see them adopted by users. At their core, the ops teams want to make sure the service doesn’t break while they are holding the pager. Because most outages are caused by some kind of change—a new configuration, a new feature launch, or a new type of user traffic—the two teams’ goals are fundamentally in tension.
+
+SRE is what happens when you ask a software engineer to design an operations team.
+
+[the] SRE team is responsible for availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning.
+
+Service Level Objectives (SLOs): Setting measurable SLOs is the first checkpoint in getting started with SRE. Put bluntly, if your organization does not have written, measured, and reported SLO’s then it’s not ready for SRE. 
+
+Reduce toil:
+Toil is the kind of work tied to running a production service that tends to be manual, repetitive, automatable, tactical, devoid of enduring value, and that scales linearly as a service grows. Toil should be capped at 50%
+If the SREs are overwhelmed with toil, then work can be distributed across other teams. This sheds load from the SRE team while exposing other engineers to the reality of running their own systems in production.
+
+3 common models:
+
+    A centralized SRE team (like a Google)
+    A decentralized SRE team
+    SREs embedded in teams
+
+The CALMS Framework for DevOps: 
+Culture - have a common goal, open channels of communication, talk regularly. 
+Automation - Start with Continuous Delivery. Computers run tests much faster than people do. Configuration as code: reliable and maintainable. Same applies to infrastructure.
+Lean - Be agile. Be anti-fragile. Accept that failure happens from time to time. Blame-free post-mortem.
+Measurement - Lead time for changes, Deployment frequency, time to restore service / mean time to recovery, change failure rate. Could also measure - change volume, deployment time, defect escape rate, response times, latency, performance, delta customers
+Sharing - The long-standing friction between development and operations teams is largely due to a lack of common ground. We believe that sharing responsibility and success will go a long way toward bridging that divide.
+
+Reliability - plan for failure: •Services break or go offline•The more complex the service, the more likely this is going to happen•The more interlinked a series of services is, the more likely this is going to happen
+
+Cattle not pets
+
+How should our code reflect that, and our ways of working (Conway’s Law)?
+There is no problem so bad that you cannot make it worse
+
+In general, an SRE team is responsible for the availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning of their service(s)
+
+The cost of failure is education
+
+Fix the problem, not the blame: 
+First Stories 								|			Second Stories
+Human error is seen as cause of failure 	|			Human error is seen as the effect of systemic vulnerabilities deeper inside the organization
+Saying what people should have done is a satisfying way to describe failure 	|		Saying what people should have done doesn’t explain why it made sense for them to do what they did
+Telling people to be more careful will make the problem go away 				| 		Only by constantly seeking out its vulnerabilities can organizations enhance safety
+
+
+
+
+Atomic
+
+        All operations in a transaction succeed or every operation is rolled back.
+
+Consistent
+
+        On the completion of a transaction, the database is structurally sound.
+
+Isolated
+
+        Transactions do not contend with one another. Contentious access to data is moderated by the database so that transactions appear to run sequentially.
+
+Durable
+
+        The results of applying a transaction are permanent, even in the presence of failures.
+
+
+        Basic Availability
+
+        The database appears to work most of the time.
+
+Soft-state
+
+        Stores don’t have to be write-consistent, nor do different replicas have to be mutually consistent all the time.
+
+Eventual consistency
+
+        Stores exhibit consistency at some later point (e.g., lazily at read time).
+
+
