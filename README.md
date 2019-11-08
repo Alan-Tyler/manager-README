@@ -23,13 +23,10 @@ To err is human (and to forgive, divine). I will make mistakes, and sometimes be
 
 I strongly believe in putting people over process and changing process to accommodate our needs and goals. I’ve worked with and without Agile; while I am a cerfified ScrumMaster and believe strongly in Agile principles, at the end of the day these are my values:
 
-        I value transparency about what’s happened, what’s happening, and what’s going to happen.
-
-        I value speed, including proactive efforts that keep us moving quickly (e.g. writing tests, refactoring legacy code before a new feature, pairing on work to improve our code quality and bus factor)
-
-        I value learning, and know that training up on a tech stack may not always be the fastest route to production.
-
-    I value your time and don’t want you to do any process that is neither beneficial to you nor required by law, policy, etc.
+I value transparency about what’s happened, what’s happening, and what’s going to happen.
+I value speed, including proactive efforts that keep us moving quickly (e.g. writing tests, refactoring legacy code before a new feature, pairing on work to improve our code quality and bus factor)
+I value learning, and know that training up on a tech stack may not always be the fastest route to production.
+I value your time and don’t want you to do any process that is neither beneficial to you nor required by law, policy, etc.
 
 
 ## Servant Leadership
@@ -76,21 +73,26 @@ You can ask me anything. The vast majority of the time I’ll answer. Very infre
 
 
 Crew Resource Management
-This is a philosophy that focus on the human dynamics of a team / squad 
-We should cerlebrate success as a team, and learn from failure as a team aswell 
-We do this by making sure that everyone has a voice
+This is a philosophy that focuses on the human dynamics of a team / squad 
+We should celebrate success as a team, and learn from failure as a team as well 
+We do this by making sure that everyone has a voice.
 We need to avoid individuals developing dominant voices / taking over the conversation. No-one should be afraid to have input. 
  
 I am accountable for the decisions the team make, even if I’m not the one making them most of the time
+
+I want to:
 Attract and retain talent
+Measure everything you deliver in terms of how the customer will benefit from it
+Spend time with Product, Marketing and Sales teams - they meet more customers than you.
+Take ownership - I always want to take the long-term view. Sacrificing long-term value for short-term gain will always end up biting you.
+Maintain a bias for action - To quote Amazon: "Speed matters in business. Many decisions and actions are reversible and do not need extensive study." It's not just OK to take calculated risks, I believe that we need to do so in order to innovate.
+Be always learning - I think it's important to always be taking on board new techs, advancements, ways of working, etc. We should always stay curious.
+Be getting stuck in - You'll never hear me say "that's not my job"
 
 
-measure everything you deliver in terms of how the customer will benefit from it
-Spemnd time with Product, Marketing and Sales teams - they meet more customers than you.
+## Personal quirks
+I am loud: My hearing is partially damaged and it's difficult for me to regulate my vocal volume. I do try, but sometimes it slips a bit. If I'm too loud then tell me.
+I argue with passion - sometimes I may go a bit red. I'm getting furious, just passionate. If I cross a line or make you feel uncomfortable then tell me: it's never my intent.
+I can repeat myself sometimes. Sometimes I'll re-word what I've said. I'll do this more often if I feel you weren't listening or didn't seem to understand the first time. If I'm annoying you or being boring by repeating myself then inturrupt me and I'll move onto the next point. 
+I like clean logs, clean exceptions, no broken windows. 
 
-
-Takw ownership - I always want to take the long-term view. Sacrificing long-term value for short-term gain will always end up biting you.
-Bias for action - To quote Amazon: "Speed matters in business. Many decisions and actions are reversible and do not need extensive study." It's not just OK top take calculated risks, I believe that we need to do so in order to innovate.
-Always learning - I think it's important nto always be taking on board new techs, advancements, ways of working, etc. We should always stay curious.
-
-Getting stuck in - You'll never hear me say "that's not my job"
