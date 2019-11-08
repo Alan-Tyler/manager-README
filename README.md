@@ -24,8 +24,11 @@ To err is human (and to forgive, divine). I will make mistakes, and sometimes be
 I strongly believe in putting people over process and changing process to accommodate our needs and goals. I’ve worked with and without Agile; while I am a cerfified ScrumMaster and believe strongly in Agile principles, at the end of the day these are my values:
 
 I value transparency about what’s happened, what’s happening, and what’s going to happen.
-I value speed, including proactive efforts that keep us moving quickly (e.g. writing tests, refactoring legacy code before a new feature, pairing on work to improve our code quality and bus factor)
+
+I value speed, including proactive efforts that keep us moving quickly (e.g. writing tests, refactoring legacy code before a new feature, pairing on work to improve our code quality and bus factor).
+
 I value learning, and know that training up on a tech stack may not always be the fastest route to production.
+
 I value your time and don’t want you to do any process that is neither beneficial to you nor required by law, policy, etc.
 
 
