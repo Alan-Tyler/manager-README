@@ -86,7 +86,7 @@ Be getting stuck in - You'll never hear me say "that's not my job".
 
 
 ## Personal quirks
-I am loud: My hearing is partially damaged and it's difficult for me to regulate my vocal volume. I do try, but sometimes it slips a bit. If I'm too loud then tell me.
+I am loud: My hearing is badly damaged and it's difficult for me to regulate my vocal volume. I do try, but sometimes it slips a bit. If I'm too loud then tell me.
 
 I argue with passion - sometimes I may go a bit red. I'm not getting furious, just passionate. If I cross a line or make you feel uncomfortable then tell me: this is most certainly never my intent.
 
