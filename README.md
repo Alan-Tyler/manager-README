@@ -73,17 +73,25 @@ I am accountable for the decisions the team make, even if I’m not the one maki
 
 ## I want to:
 Attract and retain talent.
+
 Measure what you deliver in terms of how the customer will benefit from it.
+
 Take the long-term view. Sacrificing long-term value for short-term gain will always end up biting you.
+
 Maintain a bias for action - To quote Amazon: "Speed matters in business. Many decisions and actions are reversible and do not need extensive study." It's not just OK to take calculated risks; I believe that we actively need to do so in order to innovate.
+
 Be always learning - I think it's important to always be taking on board new techs, advancements, ways of working, etc. We should always stay curious.
+
 Be getting stuck in - You'll never hear me say "that's not my job".
 
 
 ## Personal quirks
 I am loud: My hearing is partially damaged and it's difficult for me to regulate my vocal volume. I do try, but sometimes it slips a bit. If I'm too loud then tell me.
+
 I argue with passion - sometimes I may go a bit red. I'm not getting furious, just passionate. If I cross a line or make you feel uncomfortable then tell me: this is most certainly never my intent.
+
 I can repeat myself sometimes. Sometimes I'll re-word what I've said. I'll do this more often if I feel you weren't listening or didn't seem to understand the first time. If I'm annoying you or being boring by repeating myself then interrupt me and I'll move onto the next point. 
+
 I like clean, self-documenting code, clean logs, clean exceptions, no broken windows. I might come across as a bit obsessed with this from time to time.
 
 
