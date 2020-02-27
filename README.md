@@ -100,3 +100,22 @@ I am interested in continually iterating and fine-tuning these beliefs. Construc
 
 I urge you to hold me accountable to my promises, and to call out anything that might be missing from this document. Without your guidance, I will not be able to improve as a manager.
 
+
+
+## Suggested 1-2-1 format
+A suggested (informal) agenda for 1-2-1s:
+
+
+    Is there anything that needs clarity?
+    What are you most proud of/excited about?
+    What can I (your manager) improve on?
+    Anything you think important that happened since the last 1-1
+    What are potential troubles you see for the team
+    What are potential troubles you see for the company
+    What went well last week?
+    What went not so well last week?
+    Is there anything I can do to help?
+    Anything non-work related worth mentioning?
+    When x happened, what will you do differently next time?
+    Have you identified any career development opportunities that I can help you with?
+
