@@ -94,6 +94,8 @@ I can repeat myself sometimes. Sometimes I'll re-word what I've said. I'll do th
 
 I like clean, self-documenting code, clean logs, clean exceptions, no broken windows. I might come across as a bit obsessed with this from time to time.
 
+I believe strongly in the principles set out in The Toyota Way - if you haven't heard of this then do look it up; it's very interesting and while based on (automotive) manufacturing, the principles are directly transferrable and applicable to software engineering
+
 
 ## And finally
 I am interested in continually iterating and fine-tuning these beliefs. Constructive feedback is always welcome. Likewise, if you see a discrepancy between this and my behaviour, please tell me. 
