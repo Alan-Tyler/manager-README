@@ -98,6 +98,13 @@ I believe strongly in the principles set out in The Toyota Way - if you haven't 
 
 
 ## And finally
+I'm a big believer in Google's 5 Dynamics of Successful Teams, that all teams should answer 'yes' to the following:
+- Psychological safety: Can we take risks on this team without feeling insecure or embarrassed?
+- Dependability: Can we count on each other to do high quality work on time?
+- Structure & clarity: Are goals, roles, and execution plans on our team clear?
+- Meaning of work: Are we working on something that is personally important for each of us?
+- Impact of work: Do we fundamentally believe that the work we’re doing matters?
+
 I am interested in continually iterating and fine-tuning these beliefs. Constructive feedback is always welcome. Likewise, if you see a discrepancy between this and my behaviour, please tell me. 
 
 I urge you to hold me accountable to my promises, and to call out anything that might be missing from this document. Without your guidance, I will not be able to improve as a manager.
