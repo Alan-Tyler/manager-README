@@ -85,6 +85,18 @@ Be always learning - I think it's important to always be taking on board new tec
 Be getting stuck in - You'll never hear me say "that's not my job".
 
 
+## Meetings
+
+If you are in a meeting - give that meeting your whole attention. 
+If you’re dividing your attention across slack, email, your phone while in this meeting - leave the meeting. Failure to do this just prolongs the meeting for everyone involved, including you. 
+
+You are welcome to drop off a meeting as soon as it is obvious that you aren’t adding value or it’s a waste of your time.
+
+“It is not rude to leave, it is rude to make someone stay and waste their time.”
+
+I am a stickler about being on time. I’m as back-to-back as anyone else in the organisation and I’m not perfect! But in general, if I know I’m going to be +2 mins late I will message you. You should, too. Respect other people’s time as you want them to respect yours.
+
+
 ## Personal quirks
 I am loud: My hearing is badly damaged and it's difficult for me to regulate my vocal volume. I do try, but sometimes it slips a bit. If I'm too loud then tell me.
 
@@ -107,7 +119,7 @@ I'm a big believer in Google's 5 Dynamics of Successful Teams, that all teams sh
 
 I am interested in continually iterating and fine-tuning these beliefs. Constructive feedback is always welcome. Likewise, if you see a discrepancy between this and my behaviour, please tell me. 
 
-I urge you to hold me accountable to my promises, and to call out anything that might be missing from this document. Without your guidance, I will not be able to improve as a manager.
+I urge you to hold me accountable to my promises, and to call out anything that might be missing from this document. Without your guidance, I will not be able to improve as a manager. Same goes if I've come across as an idiot / insensitive / a general jerk; I most certainly am not perfect and I have no ego invested in being so. If I act like a dick then call me out for it - I often will have had no clue that I was being so. 
 
 
 
